@@ -10,3 +10,6 @@ C:\Users\chenxinjizhe\source\repos\EiwaDict\obj\Debug\EiwaDict.exe
 C:\Users\chenxinjizhe\source\repos\EiwaDict\obj\Debug\EiwaDict.pdb
 C:\Users\chenxinjizhe\source\repos\EiwaDict\obj\Debug\EiwaDict.RegistForm.resources
 C:\Users\chenxinjizhe\source\repos\EiwaDict\obj\Debug\EiwaDict.QueryForm.resources
+C:\Users\chenxinjizhe\source\repos\EiwaDict\obj\Debug\EiwaDict.UserForm.resources
+C:\Users\chenxinjizhe\source\repos\EiwaDict\obj\Debug\EiwaDict.ParaphaseForm.resources
+C:\Users\chenxinjizhe\source\repos\EiwaDict\obj\Debug\EiwaDict.WordbookForm.resources

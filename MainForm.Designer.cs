@@ -36,7 +36,8 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(76, 351);
+            this.button1.Font = new System.Drawing.Font("ＭＳ Ｐ明朝", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button1.Location = new System.Drawing.Point(631, 50);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(103, 53);
             this.button1.TabIndex = 0;
@@ -46,7 +47,8 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(242, 351);
+            this.button2.Font = new System.Drawing.Font("ＭＳ Ｐ明朝", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button2.Location = new System.Drawing.Point(631, 153);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(103, 53);
             this.button2.TabIndex = 1;
@@ -56,7 +58,8 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(419, 351);
+            this.button3.Font = new System.Drawing.Font("ＭＳ Ｐ明朝", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button3.Location = new System.Drawing.Point(631, 253);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(103, 53);
             this.button3.TabIndex = 2;
@@ -66,7 +69,8 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(587, 351);
+            this.button4.Font = new System.Drawing.Font("ＭＳ Ｐ明朝", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button4.Location = new System.Drawing.Point(631, 347);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(103, 53);
             this.button4.TabIndex = 3;
@@ -78,6 +82,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.BackgroundImage = global::EiwaDict.Properties.Resources._123;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);

@@ -15,11 +15,12 @@ namespace EiwaDict
     public partial class RegistForm : Form
     {
 
-        private String connectstr = "Data Source=desktop-l8v4jp3;Initial Catalog=Dic_jp;Integrated Security=True";
+        private const String connectstr = "Data Source=MYCOMPUTER\\SQLEXPRESS;Initial Catalog=EiwaDB;Integrated Security=True";
         private SqlConnection sqlCnt;
         public RegistForm()
         {
             InitializeComponent();
+            sqlCnt = new SqlConnection(connectstr);
         }
 
         private void RegistForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -62,36 +63,35 @@ namespace EiwaDict
                 MessageBox.Show("ユーザー名が長すぎます。");
                 return;
             }
-            //sqlCnt = new SqlConnection(connectstr);
-            //sqlCnt.Open();
-            //SqlCommand cmd1 = sqlCnt.CreateCommand();
-            //cmd1.CommandType = CommandType.Text;
-            //cmd1.CommandText = "Select count(*) from user_table where nickname = @nickname";
-            //cmd1.Parameters.Add("@nickname", SqlDbType.VarChar);
-            //cmd1.Parameters["@nickname"].Value = nname;
-            //if (Int32.Parse(cmd1.ExecuteScalar().ToString()) >= 1)
-            //{
-            //    MessageBox.Show("ユーザー名が存在しています！");
-            //    sqlCnt.Close();
-            //    return;
-            //}
-            //SqlCommand cmd = sqlCnt.CreateCommand();
-            //cmd.CommandType = CommandType.Text;
-            //cmd.CommandText = "Insert into user_table Values(Left(NewID(),8),@nickname,CONVERT(char(32),HashBytes('MD5',@password),2))";
-            //cmd.Parameters.Add("@nickname", SqlDbType.VarChar);
-            //cmd.Parameters.Add("@password", SqlDbType.VarChar);
-            //cmd.Parameters["@nickname"].Value = nname;
-            //cmd.Parameters["@password"].Value = password;
-            //try
-            //{
-            //    cmd.ExecuteNonQuery();
-            //    MessageBox.Show("登録成功しました。");
-            //}
-            //catch (SqlException er)
-            //{
-            //    MessageBox.Show(er.ToString());
-            //}
-            //sqlCnt.Close();
+            sqlCnt.Open();
+            SqlCommand cmd1 = sqlCnt.CreateCommand();
+            cmd1.CommandType = CommandType.Text;
+            cmd1.CommandText = "Select count(*) from user_table where nickname = @nickname";
+            cmd1.Parameters.Add("@nickname", SqlDbType.VarChar);
+            cmd1.Parameters["@nickname"].Value = nname;
+            if (Int32.Parse(cmd1.ExecuteScalar().ToString()) >= 1)
+            {
+                MessageBox.Show("ユーザー名が存在しています！");
+                sqlCnt.Close();
+                return;
+            }
+            SqlCommand cmd = sqlCnt.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "Insert into user_table Values(Left(NewID(),8),@nickname,CONVERT(char(32),HashBytes('MD5',@password),2))";
+            cmd.Parameters.Add("@nickname", SqlDbType.VarChar);
+            cmd.Parameters.Add("@password", SqlDbType.VarChar);
+            cmd.Parameters["@nickname"].Value = nname;
+            cmd.Parameters["@password"].Value = password;
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("登録成功しました。");
+            }
+            catch (SqlException er)
+            {
+                MessageBox.Show(er.ToString());
+            }
+            sqlCnt.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)

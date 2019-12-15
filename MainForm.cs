@@ -20,7 +20,7 @@ namespace EiwaDict
         //単語検索
         private void button1_Click(object sender, EventArgs e)
         {
-            QueryForm qf = new QueryForm(false);
+            QueryForm qf = new QueryForm();
             this.Hide();
             if (qf.ShowDialog() == DialogResult.OK)
                 qf.Dispose();
@@ -42,7 +42,7 @@ namespace EiwaDict
         //ログイン
         private void button3_Click(object sender, EventArgs e)
         {
-            LoginForm lf = new LoginForm();
+            LoginForm lf = new LoginForm(false);
             this.Hide();
             if (lf.ShowDialog() == DialogResult.OK)
                 this.Show();

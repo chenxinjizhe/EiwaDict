@@ -36,7 +36,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("ＭＳ Ｐ明朝", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1.Location = new System.Drawing.Point(75, 292);
+            this.button1.Location = new System.Drawing.Point(441, 64);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(97, 46);
@@ -48,7 +48,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("ＭＳ Ｐ明朝", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button2.Location = new System.Drawing.Point(257, 292);
+            this.button2.Location = new System.Drawing.Point(441, 182);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(97, 46);
@@ -73,6 +73,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::EiwaDict.Properties.Resources._7aec54e736d12f2e12774a7f49c2d562853568bb;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(621, 378);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);

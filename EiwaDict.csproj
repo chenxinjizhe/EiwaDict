@@ -58,6 +58,12 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ParaphaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParaphaseForm.Designer.cs">
+      <DependentUpon>ParaphaseForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QueryForm.cs">
@@ -78,11 +84,20 @@
     <Compile Include="UserForm.Designer.cs">
       <DependentUpon>UserForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="WordbookForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WordbookForm.Designer.cs">
+      <DependentUpon>WordbookForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParaphaseForm.resx">
+      <DependentUpon>ParaphaseForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -92,6 +107,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="QueryForm.resx">
       <DependentUpon>QueryForm.cs</DependentUpon>
@@ -101,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserForm.resx">
       <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WordbookForm.resx">
+      <DependentUpon>WordbookForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -114,6 +133,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7aec54e736d12f2e12774a7f49c2d562853568bb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\377adab44aed2e73639a9b9b8701a18b87d6fa12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\191501_2015083116263361nc0p6iyxisype.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1233.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

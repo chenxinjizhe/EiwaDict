@@ -13,10 +13,12 @@ namespace EiwaDict
     public partial class UserForm : Form
     {
         private string user_id;
+        WordbookForm word_book_form ;
         public UserForm(string uid)
         {
             InitializeComponent();
             this.user_id = uid;
+            word_book_form = new WordbookForm(user_id);
         }
 
         private void UserForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -27,7 +29,7 @@ namespace EiwaDict
         //単語検索
         private void button1_Click(object sender, EventArgs e)
         {
-            QueryForm qf = new QueryForm(false);
+            QueryForm qf = new QueryForm(user_id);
             this.Hide();
             if (qf.ShowDialog() == DialogResult.OK)
                 qf.Dispose();
@@ -37,13 +39,16 @@ namespace EiwaDict
         //ワードブック
         private void button2_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            if (word_book_form.ShowDialog() == DialogResult.OK)
+                word_book_form.Hide();
+            this.Show();
         }
 
         //ログアウト
         private void button3_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }
