@@ -1,0 +1,12 @@
+C:\Users\chenxinjizhe\source\repos\EiwaDict\bin\Debug\EiwaDict.exe.config
+C:\Users\chenxinjizhe\source\repos\EiwaDict\bin\Debug\EiwaDict.exe
+C:\Users\chenxinjizhe\source\repos\EiwaDict\bin\Debug\EiwaDict.pdb
+C:\Users\chenxinjizhe\source\repos\EiwaDict\obj\Debug\EiwaDict.csprojAssemblyReference.cache
+C:\Users\chenxinjizhe\source\repos\EiwaDict\obj\Debug\EiwaDict.LoginForm.resources
+C:\Users\chenxinjizhe\source\repos\EiwaDict\obj\Debug\EiwaDict.MainForm.resources
+C:\Users\chenxinjizhe\source\repos\EiwaDict\obj\Debug\EiwaDict.Properties.Resources.resources
+C:\Users\chenxinjizhe\source\repos\EiwaDict\obj\Debug\EiwaDict.csproj.GenerateResource.cache
+C:\Users\chenxinjizhe\source\repos\EiwaDict\obj\Debug\EiwaDict.exe
+C:\Users\chenxinjizhe\source\repos\EiwaDict\obj\Debug\EiwaDict.pdb
+C:\Users\chenxinjizhe\source\repos\EiwaDict\obj\Debug\EiwaDict.RegistForm.resources
+C:\Users\chenxinjizhe\source\repos\EiwaDict\obj\Debug\EiwaDict.QueryForm.resources
