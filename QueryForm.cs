@@ -12,9 +12,11 @@ namespace EiwaDict
 {
     public partial class QueryForm : Form
     {
-        public QueryForm()
+        private bool isNewLogin;
+        public QueryForm(bool inl)
         {
             InitializeComponent();
+            this.isNewLogin = inl;
         }
 
         //検索
@@ -26,7 +28,7 @@ namespace EiwaDict
         //戻る
         private void button3_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

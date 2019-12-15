@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace EiwaDict
 {
-    public partial class MainForm : Form
+    public partial class UserForm : Form
     {
-        public MainForm()
+        private string user_id;
+        public UserForm(string uid)
         {
             InitializeComponent();
+            this.user_id = uid;
+        }
+
+        private void UserForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
         }
 
         //単語検索
@@ -27,31 +34,16 @@ namespace EiwaDict
             this.Show();
         }
 
-        //登録
+        //ワードブック
         private void button2_Click(object sender, EventArgs e)
         {
-            RegistForm rf = new RegistForm();
-            this.Hide();
-            if (rf.ShowDialog() == DialogResult.OK)
-            {
-                rf.Dispose();
-            }
-            this.Show();
+
         }
 
-        //ログイン
+        //ログアウト
         private void button3_Click(object sender, EventArgs e)
         {
-            LoginForm lf = new LoginForm();
-            this.Hide();
-            if (lf.ShowDialog() == DialogResult.OK)
-                this.Show();
-        }
 
-        //閉じる
-        private void button4_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
