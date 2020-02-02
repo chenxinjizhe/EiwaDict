@@ -1,0 +1,15 @@
+C:\Users\chenxinjizhe\source\repos\EiwaDict\bin\Release\EiwaDict.exe.config
+C:\Users\chenxinjizhe\source\repos\EiwaDict\bin\Release\EiwaDict.exe
+C:\Users\chenxinjizhe\source\repos\EiwaDict\bin\Release\EiwaDict.pdb
+C:\Users\chenxinjizhe\source\repos\EiwaDict\obj\Release\EiwaDict.LoginForm.resources
+C:\Users\chenxinjizhe\source\repos\EiwaDict\obj\Release\EiwaDict.MainForm.resources
+C:\Users\chenxinjizhe\source\repos\EiwaDict\obj\Release\EiwaDict.ParaphaseForm.resources
+C:\Users\chenxinjizhe\source\repos\EiwaDict\obj\Release\EiwaDict.Properties.Resources.resources
+C:\Users\chenxinjizhe\source\repos\EiwaDict\obj\Release\EiwaDict.QueryForm.resources
+C:\Users\chenxinjizhe\source\repos\EiwaDict\obj\Release\EiwaDict.RegistForm.resources
+C:\Users\chenxinjizhe\source\repos\EiwaDict\obj\Release\EiwaDict.UserForm.resources
+C:\Users\chenxinjizhe\source\repos\EiwaDict\obj\Release\EiwaDict.WordbookForm.resources
+C:\Users\chenxinjizhe\source\repos\EiwaDict\obj\Release\EiwaDict.csproj.GenerateResource.cache
+C:\Users\chenxinjizhe\source\repos\EiwaDict\obj\Release\EiwaDict.exe
+C:\Users\chenxinjizhe\source\repos\EiwaDict\obj\Release\EiwaDict.pdb
+C:\Users\chenxinjizhe\source\repos\EiwaDict\obj\Release\EiwaDict.csprojAssemblyReference.cache

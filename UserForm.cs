@@ -40,6 +40,7 @@ namespace EiwaDict
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
+            word_book_form.UpdateComponents();
             if (word_book_form.ShowDialog() == DialogResult.OK)
                 word_book_form.Hide();
             this.Show();

@@ -96,6 +96,32 @@ namespace EiwaDict
             }
             this.Show();
         }
-
+   
+        public void UpdateComponents()
+        {
+            sqlCnt = new SqlConnection(connectstr);
+            sqlCnt.Open();
+            SqlCommand cmd = sqlCnt.CreateCommand();
+            cmd.CommandText = "select word, paraphase,d.id from dictionary d join word_table w on d.id = w.wid where w.uid = @user_id";
+            cmd.Parameters.Add(new SqlParameter("@user_id", user_id));
+            sda = new SqlDataAdapter(cmd);
+            ds = new DataSet();
+            int flag = sda.Fill(ds, "dictionary");
+            if (flag == 0)
+            {
+                label1.Text = "ワードブックに単語がありません";
+                sqlCnt.Close();
+                return;
+            }
+            label1.Text = "ダブルクリックで詳細解釈が見られます";
+            dataGridView1.DataSource = ds;
+            dataGridView1.DataMember = "dictionary";
+            sqlCnt.Close();
+            dataGridView1.Columns[0].HeaderText = "英単語";
+            dataGridView1.Columns[1].HeaderText = "解釈";
+            dataGridView1.Columns[0].Width = 150;
+            dataGridView1.Columns[1].Width = 600;
+            dataGridView1.Columns[2].Visible = false;
+        }
     }
 }
